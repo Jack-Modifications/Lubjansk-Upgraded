@@ -1,27 +1,5 @@
-static Object SpawnObject(string type, vector position, vector orientation, float scale = 1.0)
+void SpawnLubjanskUpgraded()
 {
-    Object obj = GetGame().CreateObjectEx(type, position, ECE_SETUP | ECE_UPDATEPATHGRAPH | ECE_CREATEPHYSICS);
-    if (!obj) {
-        Error("Failed to create object " + type);
-        return null;
-    }
-
-    obj.SetPosition(position);
-    obj.SetOrientation(orientation);
-    obj.SetOrientation(obj.GetOrientation());
-    obj.SetScale(scale);
-    obj.Update();
-	obj.SetAffectPathgraph(true, false);
-	if (obj.CanAffectPathgraph()) {
-        GetGame().GetCallQueue(CALL_CATEGORY_SYSTEM).CallLater(GetGame().UpdatePathgraphRegionByObject, 100, false, obj);
-    } 
-
-    return obj;
-}
-
-// Paste anything below this line into the bottom of your 'void main()' function
-
-
 // Created Objects
 SpawnObject("Land_House_1W01", "4536.177246 17.626770 11042.514648", "-3.600006 0.000000 0.000000", 0.999999);
 SpawnObject("Land_House_1W03", "4549.199219 18.008514 11004.554688", "173.360977 0.000000 -0.000000", 0.999999);
@@ -69,6 +47,7 @@ SpawnObject("land_wrecked_uaz", "4473.985840 12.607738 11113.872070", "-162.0000
 SpawnObject("land_wrecked_uaz", "4480.288574 13.487522 11074.566406", "162.000061 3.750875 -0.549957", 0.999265);
 SpawnObject("Land_House_1B01_Pub", "4614.652344 17.982479 11036.890625", "89.999817 -0.000000 -0.000000", 1);
 
+}
 
 // Uncomment if you want to export loot from newly added buildings
 // Position, Radius (increase if you have a larger map than Chernarus)
