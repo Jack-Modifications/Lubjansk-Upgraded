@@ -9,7 +9,7 @@ DAYZ MOD - NAMALSK MAP ADDON
 
  If you have DayZ Editor Loader on your server then extract "LUBJANSK-UPGRADE.dze" to the "EditorFiles" folder.
 
-**2. IF you choose to install this via init.c you please follow these instructions.**
+**2. IF you choose to install this via `init.c` you please follow these instructions.**
 
 Go to your server "mpmissions" folder and open "?????????.namalsk" folder which your server use.
 
