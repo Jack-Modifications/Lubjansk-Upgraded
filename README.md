@@ -18,7 +18,7 @@ and then head over into `LUBJANSK-UPGRADE-MAPGROUPOS.xml` and copy the contents 
 If you dont have DayZ Editor Loader then grab the `LUBJANSK-UPGRADE-INIT.c` and just put it in your mission folder and load it in your main "init.c" file like so:
 
 Put this at the top of your init.c:
-`#include "$CurrentDir:mpmissions/hardcore.namalsk/LUBJANSK-UPGRADE-INIT.c"`
+`#include "$CurrentDir:mpmissions/????????.namalsk/LUBJANSK-UPGRADE-INIT.c"`
 
 and add this to the end in main function:
 `SpawnLubjanskUpgraded();`
