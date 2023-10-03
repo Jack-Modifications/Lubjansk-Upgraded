@@ -1,7 +1,8 @@
 # Lubjansk-Upgraded
+
 DAYZ MOD - NAMALSK MAP ADDON
 
-*My Discord is work in progress, so if there are any issues, I think you can create something under the issues section on here.*
+**Join my discord:** https://discord.gg/df8qrdYR8u
 
 **_HOW TO INSTALL:_** ***(You will have multiple installation options.)***
 
